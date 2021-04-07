@@ -1,0 +1,37 @@
+<h1>Hola mundo :D</h1>
+
+<div id="o-contenedor-principal">
+    <div id="o-variables" class="o-contenedor-calculadora ">
+        <div id="o-titulos">
+        <h2>UAO</h2>
+        <h1>CALCULATOR</h1>
+        </div>
+        <label class="o-nombre-variables" for="fname">Numero 1:</label>
+          <input class="o-caja-texto" type="number" id="nume1" name="numero1" (change)="onchangeNum()" >
+
+         <label class="o-nombre-variables" for="fname">Numero 2:</label>
+        <input class="o-caja-texto" type="number" id="nume2" name="numero2" (change)="onchangeNum()"  >            
+
+        <label class="o-nombre-variables" for="fname">Operación:</label>
+
+        <select id="SelectOp" class="o-operaciones" (change)="onchangeNum()">
+            <option value="SUMAR">Suma</option>
+            <option value="RESTAR">Resta</option>
+            <option value="DIVIDIR">Dividir</option>
+            <option value="MULTIPLICAR">Multiplicar</option>
+        </select>
+
+    </div>
+
+    <div  class="o-contenedor-calculadora ">
+        <input class="o-btn-igual" type="button" value="=" (click)="onClickCalcular()">
+    </div>
+
+    <div id="o-contenedor-resultado" class="o-contenedor-calculadora ">
+        <label class="o-nombre-variables" for="fname"  >Resultado:</label>
+        <h3 id="resultado"> {{resu}} </h3>
+
+    </div>
+
+
+</div>
